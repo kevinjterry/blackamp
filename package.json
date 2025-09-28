@@ -1,0 +1,84 @@
+{
+  "name": "blackamp",
+  "publisher": "kevinjterry",
+  "author": "Kevin Terry <kevinjterry@gmail.com>",
+  "license": "MIT",
+  "displayName": "Blackamp Theme",
+  "description": "Minimal dark theme",
+  "version": "0.0.1",
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#161D26",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/kevinjterry/blackamp-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinjterry/blackamp-theme"
+  },
+  "keywords": [
+    "blackamp theme",
+    "blackamp",
+    "blackamp",
+    "black amp",
+    "black amp theme",
+    "cobalt",
+    "blue",
+    "dark blue",
+    "dark ui",
+    "default dark",
+    "dark default",
+    "dark+",
+    "deep blue",
+    "shades of blue",
+    "shades of purple",
+    "azure",
+    "blueish",
+    "night",
+    "semantic",
+    "hacker",
+    "ice",
+    "teal",
+    "purple",
+    "pastel",
+    "pastel colors",
+    "minimal",
+    "minimalistic",
+    "minimalista",
+    "retro",
+    "min",
+    "one dark",
+    "dracula",
+    "night owl",
+    "omni",
+    "material",
+    "rainglow",
+    "natural",
+    "classy",
+    "aesthetic",
+    "dracula",
+    "soft",
+    "deep",
+    "pink",
+    "contrast",
+    "vim",
+    "neovim",
+    "vscode",
+    "visual studio code"
+  ],
+  "engines": {
+    "vscode": "^1.67.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Blackamp Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/blackamp-theme.json"
+      }
+    ]
+  }
+}
