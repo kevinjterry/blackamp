@@ -12,17 +12,12 @@ _BLACKAMP is a dark VS Code theme inspired by loud vintage amplifiers._
 
 ## SCREENSHOTS
 
-### C
-
+<div align="center">
 <img src="./assets/c-example.png" width="80%" alt="C/C++ Example showing tube amplifier design calculator"/>
-
-_C syntax_
-
-### Python
-
+<br></br>
+<br></br>
 <img src="./assets/python-example.png" width="80%" alt="Python Example showing advanced language features"/>
-
-_Python syntax_
+</div>
 
 ## INSTALLATION
 

@@ -1,2 +1,4 @@
 /demo
 /docs
+.DS_Store
+/.vscode
