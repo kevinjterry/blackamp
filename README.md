@@ -2,24 +2,33 @@
 
 <img src="./assets/blackamp-icon.png" width="40%" alt="Blackamp Theme Logo"/>
 
-_BLACKAMP is a dark VS Code theme inspired by loud vintage amplifiers._
+_Blackamp is a dark VSCode theme inspired by loud vintage amplifiers_
 
-[![Version](https://img.shields.io/badge/version-0.0.1-c8a368?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=kt.blackamp)
+[![Version](https://img.shields.io/badge/version-1.0.0-c8a368?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=kt.blackamp)
 [![License](https://img.shields.io/badge/license-MIT-c8a368?style=for-the-badge)](./LICENSE)
-[![VS Code](https://img.shields.io/badge/VS%20Code-1.60+-1b1b1c?style=for-the-badge)](https://code.visualstudio.com/)
+[![VS Code](https://img.shields.io/badge/VS%20Code-1.60+-1b1b1c?style=for-the-badge&logo=visual-studio-code)](https://code.visualstudio.com/)
 
 </div>
 
-## SCREENSHOTS
+---
 
-<div align="center">
+## Screenshots
+
+### C
+
 <img src="./assets/c-example.png" width="80%" alt="C/C++ Example showing tube amplifier design calculator"/>
-<br></br>
-<br></br>
-<img src="./assets/python-example.png" width="80%" alt="Python Example showing advanced language features"/>
-</div>
 
-## INSTALLATION
+_C syntax_
+
+### Python
+
+<img src="./assets/python-example.png" width="80%" alt="Python Example showing advanced language features"/>
+
+_Python syntax_
+
+---
+
+## Installation
 
 ### VS Code Marketplace
 
@@ -47,12 +56,46 @@ git clone https://github.com/kevinjterry/blackamp-theme.git
 {
   "workbench.colorTheme": "blackamp",
   "editor.semanticHighlighting.enabled": true,
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Fira Code, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
   "editor.lineHeight": 1.5
 }
 ```
 
-## CONFIGURATION
+---
+
+## Special Features
+
+### **Constructor Highlighting**
+
+```typescript
+// Constructor calls are highlighted in signature orange
+const color = new Color(255, 0, 0); // 🟠 Orange
+const client = ApiClient.getInstance(); // 🟠 Orange
+const vector = Vector3(1.0, 2.0, 3.0); // 🟠 Orange
+```
+
+### **Template String Magic**
+
+```typescript
+// Gold interpolation markers with proper nesting
+const message = `Hello ${user.name}!`; // 🟡 Gold markers
+const query = `SELECT * FROM ${table}`; // 🟡 Gold markers
+```
+
+### **Semantic Intelligence**
+
+```python
+# Smart highlighting based on context
+def calculate_gain(self, voltage: float) -> float:
+#   ^^^^^^^^^^^^^  ^^^^  ^^^^^^^  ^^^^^    ^^^^
+#   Function       Self   Param    Type     Type
+#   (blue-gray)   (teal) (gray)   (teal)   (teal)
+```
+
+---
+
+## ⚙️ Configuration
 
 ### Recommended Settings
 
@@ -67,18 +110,14 @@ git clone https://github.com/kevinjterry/blackamp-theme.git
 }
 ```
 
-## RECOMMENDED FONT
-
+## Recommended Font
 **Primary**: [Fira Code](https://github.com/tonsky/FiraCode) with ligatures
 
-## CONTRIBUTING
+## Contributing
+We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md) for details.
 
-Absolutely welcome contributions!
-
-## LICENSE
-
+## License
 MIT License - see [LICENSE](./LICENSE) for details.
 
-## INSPIRATION
-
-I built this originally off the base of [Safira](https://github.com/yinzdev/safira-vscode) which is a long running favorite theme of mine.
+## Inspiration
+Built from the base of Safira which is a long running favorite theme of mine.

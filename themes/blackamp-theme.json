@@ -118,7 +118,7 @@
 
     "breadcrumb.background": "#1b1b1c",
     "breadcrumb.foreground": "#969696",
-    "breadcrumb.focusForeground": "#D2D2D2",
+    "breadcrumb.focusForeground": "#D1D1D1",
     "breadcrumb.activeSelectionForeground": "#EBEBEB",
     "breadcrumbPicker.background": "#434A56",
 
@@ -197,7 +197,7 @@
     "panelTitle.inactiveForeground": "#969696",
 
     "terminal.background": "#1b1b1c",
-    "terminal.foreground": "#D2D2D2",
+    "terminal.foreground": "#D1D1D1",
     "terminal.border": "#525457ab",
     "terminalCommandDecoration.errorBackground": "#d36464",
 
@@ -336,8 +336,8 @@
     "class.constructor": "#c8a368",
     "function.constructor": "#c8a368",
     "method.constructor": "#c8a368",
-    "function.call": "#e0e3e6",
-    "method.call": "#e0e3e6"
+    "function.call": "#A5A5A5",
+    "method.call": "#A5A5A5"
   },
   "tokenColors": [
     {
@@ -390,7 +390,7 @@
         "support.function.any-method",
         "variable.function"
       ],
-      "settings": { "foreground": "#e0e3e6" }
+      "settings": { "foreground": "#A5A5A5" }
     },
     {
       "name": "Function calls",
@@ -398,7 +398,7 @@
         "meta.function-call.generic.python",
         "support.function.builtin.python"
       ],
-      "settings": { "foreground": "#e0e3e6" }
+      "settings": { "foreground": "#A5A5A5" }
     },
     {
       "name": "Support functions",
@@ -500,7 +500,7 @@
     {
       "name": "Strings",
       "scope": ["string"],
-      "settings": { "foreground": "#959695" }
+      "settings": { "foreground": "#D1D1D1" }
     },
     {
       "name": "String interpolation",
@@ -514,7 +514,7 @@
     {
       "name": "Template literals",
       "scope": ["keyword.other.template.begin", "keyword.other.template.end"],
-      "settings": { "foreground": "#959695" }
+      "settings": { "foreground": "#A5A5A5" }
     },
     {
       "name": "Reset JavaScript string interpolation expression",
@@ -558,7 +558,7 @@
         "punctuation.definition.string.begin",
         "punctuation.definition.string.end"
       ],
-      "settings": { "foreground": "#959695" }
+      "settings": { "foreground": "#A5A5A5" }
     },
 
     {
@@ -576,7 +576,7 @@
       "scope": ["entity.other.attribute-name.id"],
       "settings": {
         "fontStyle": "normal",
-        "foreground": "#e0e3e6"
+        "foreground": "#A5A5A5"
       }
     },
 
@@ -612,7 +612,7 @@
       "scope": [
         "source.json meta.structure.dictionary.json > value.json > string.quoted.json"
       ],
-      "settings": { "foreground": "#959695" }
+      "settings": { "foreground": "#d3dade" }
     },
 
     {
@@ -629,6 +629,11 @@
       "name": "Python logical operators",
       "scope": ["keyword.operator.logical.python"],
       "settings": { "foreground": "#c8a368" }
+    },
+    {
+      "name": "Python docstrings",
+      "scope": ["string.quoted.docstring.multi.python"],
+      "settings": { "foreground": "#515050", "fontStyle": "italic" }
     },
 
     {
