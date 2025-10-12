@@ -203,20 +203,20 @@
 
     "terminal.ansiWhite": "#d3dade",
     "terminal.ansiBlack": "#5e5e5e",
-    "terminal.ansiBlue": "#407dff",
-    "terminal.ansiCyan": "#d6c7a6",
-    "terminal.ansiGreen": "#0ed78a",
-    "terminal.ansiMagenta": "#E560E6",
-    "terminal.ansiRed": "#FF465C",
-    "terminal.ansiYellow": "#cfa84a",
+    "terminal.ansiBlue": "#6b8db5",
+    "terminal.ansiCyan": "#7a9aa3",
+    "terminal.ansiGreen": "#8bb374",
+    "terminal.ansiMagenta": "#b58db5",
+    "terminal.ansiRed": "#c57575",
+    "terminal.ansiYellow": "#c8a368",
     "terminal.ansiBrightWhite": "#EBEBEB",
     "terminal.ansiBrightBlack": "#8C8C8C",
-    "terminal.ansiBrightBlue": "#82AAFF",
-    "terminal.ansiBrightCyan": "#A6F8E9",
-    "terminal.ansiBrightGreen": "#2ADD75",
-    "terminal.ansiBrightMagenta": "#FF64FF",
-    "terminal.ansiBrightRed": "#FF465C",
-    "terminal.ansiBrightYellow": "#cfa84a",
+    "terminal.ansiBrightBlue": "#8db1d4",
+    "terminal.ansiBrightCyan": "#9bb8c2",
+    "terminal.ansiBrightGreen": "#a5c796",
+    "terminal.ansiBrightMagenta": "#d1a8d1",
+    "terminal.ansiBrightRed": "#d89595",
+    "terminal.ansiBrightYellow": "#d9b584",
     "terminal.selectionBackground": "#7c7f82",
     "terminalCursor.background": "#E1E1E1",
 
@@ -523,9 +523,9 @@
     },
 
     {
-      "name": "Variables",
+      "name": "Variables - General",
       "scope": ["variable"],
-      "settings": { "foreground": "#d36464" }
+      "settings": { "foreground": "#c8a368" }
     },
     {
       "name": "Variable parameters",
@@ -538,11 +538,36 @@
       "settings": { "foreground": "#c8a368" }
     },
     {
-      "name": "Variable properties",
+      "name": "Variable properties and object members",
       "scope": [
         "variable.other.readwrite",
         "meta.object-literal.key",
-        "support.variable.property"
+        "support.variable.property",
+        "variable.other.property"
+      ],
+      "settings": { "foreground": "#d36464" }
+    },
+    {
+      "name": "C/C++ Local variables",
+      "scope": ["variable.other.local.c", "variable.other.local.cpp"],
+      "settings": { "foreground": "#c8a368" }
+    },
+    {
+      "name": "C/C++ Global and static variables",
+      "scope": [
+        "variable.other.global.c",
+        "variable.other.global.cpp",
+        "storage.modifier.static variable.other"
+      ],
+      "settings": { "foreground": "#d36464" }
+    },
+    {
+      "name": "C/C++ Member variables",
+      "scope": [
+        "variable.other.member.c",
+        "variable.other.member.cpp",
+        "variable.other.field.c",
+        "variable.other.field.cpp"
       ],
       "settings": { "foreground": "#d36464" }
     },
