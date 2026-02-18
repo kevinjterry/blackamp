@@ -14,7 +14,7 @@
     "menu.background": "#2c2e30",
     "menu.foreground": "#d3dade",
     "menu.separatorBackground": "#5D656F",
-    "menu.selectionBackground": "#d3dade",
+    "menu.selectionBackground": "#66686b",
     "menu.selectionForeground": "#EBEBEB",
 
     "editor.background": "#1b1b1c",
@@ -25,7 +25,7 @@
     "editorGutter.background": "#1b1b1c",
     "editorGutter.addedBackground": "#6c9541f5",
     "editorGutter.modifiedBackground": "#1aa0fff5",
-    "editorGutter.deletedBackground": "#8F98A0",
+    "editorGutter.deletedBackground": "#d36464f5",
     "editorGutter.foldingControlForeground": "#969696",
 
     "editorCursor.foreground": "#EBEBEB",
@@ -51,6 +51,8 @@
     "editorWidget.foreground": "#d3dade",
     "editorWidget.border": "#00000000",
     "editorWidget.resizeBorder": "#2c2e30",
+    "editorWarning.foreground": "#c8a368",
+    "editorInfo.foreground": "#458b96",
     "editorError.foreground": "#d36464",
     "editorMarkerNavigationError.background": "#d36464",
 
@@ -71,7 +73,7 @@
     "editorOverviewRuler.modifiedForeground": "#9ba1a3",
     "editorOverviewRuler.addedForeground": "#018352",
     "editorOverviewRuler.deletedForeground": "#5D656F",
-    "editorOverviewRuler.errorForeground": "#979087",
+    "editorOverviewRuler.errorForeground": "#d36464",
     "editorOverviewRuler.warningForeground": "#ffd175",
     "editorOverviewRuler.infoForeground": "#1A9FFF",
     "editorOverviewRuler.selectionHighlightForeground": "#a3cf06d5",
@@ -82,7 +84,7 @@
 
     "editorBracketHighlight.foreground1": "#c8a368",
     "editorBracketHighlight.foreground2": "#bab8b6",
-    "editorBracketHighlight.foreground3": "#c2e1f0",
+    "editorBracketHighlight.foreground3": "#96a884",
 
     "editorGroup.border": "#525457ab",
     "editorGroup.emptyBackground": "#1b1b1c",
@@ -257,7 +259,7 @@
 
     "problemsErrorIcon.foreground": "#d36464",
     "problemsWarningIcon.foreground": "#c8a368",
-    "problemsInfoIcon.foreground": "#c8a368",
+    "problemsInfoIcon.foreground": "#458b96",
 
     "debugConsole.errorForeground": "#d36464",
     "debugTokenExpression.error": "#d36464",
@@ -269,13 +271,13 @@
     "notifications.background": "#1b1b1c",
     "notifications.border": "#525457ab",
     "notificationLink.foreground": "#9ba1a3",
-    "notificationsErrorIcon.foreground": "#FF8686",
+    "notificationsErrorIcon.foreground": "#d36464",
     "notificationsWarningIcon.foreground": "#c8a368",
-    "notificationsInfoIcon.foreground": "#c8a368",
+    "notificationsInfoIcon.foreground": "#458b96",
 
     "minimap.findMatchHighlight": "#d36464fa",
     "minimap.selectionOccurrenceHighlight": "#969696b0",
-    "minimap.errorHighlight": "#979087a5",
+    "minimap.errorHighlight": "#d36464a5",
     "minimap.warningHighlight": "#c8a368a5",
     "minimap.infoHighlight": "#1A9FFFa5",
     "minimap.background": "#1b1b1c",
@@ -322,10 +324,10 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "enumMember": {
-      "foreground": "#d3dade"
+      "foreground": "#d4d4d4"
     },
     "variable.constant": {
-      "foreground": "#d3dade"
+      "foreground": "#458b96"
     },
     "variable.defaultLibrary": {
       "foreground": "#458b96"
@@ -336,6 +338,9 @@
     "class.constructor": "#c8a368",
     "function.constructor": "#c8a368",
     "method.constructor": "#c8a368",
+    "property": "#d36464",
+    "selfKeyword": "#d36464",
+    "selfParameter": "#d36464",
     "function.call": "#A5A5A5",
     "method.call": "#A5A5A5"
   },
@@ -345,14 +350,14 @@
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#585958"
+        "foreground": "#5d5b52"
       }
     },
     {
       "name": "Comment Markup Link",
       "scope": "comment markup.link",
       "settings": {
-        "foreground": "#585958"
+        "foreground": "#5d5b52"
       }
     },
     {
@@ -369,12 +374,12 @@
         "constant.language",
         "constant.character.escape"
       ],
-      "settings": { "foreground": "#d3dade" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "Constant other",
       "scope": ["constant.other"],
-      "settings": { "foreground": "#d3dade" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "Variable constants",
@@ -390,7 +395,7 @@
         "support.function.any-method",
         "variable.function"
       ],
-      "settings": { "foreground": "#A5A5A5" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "Function calls",
@@ -403,7 +408,7 @@
     {
       "name": "Support functions",
       "scope": ["support.function"],
-      "settings": { "foreground": "#d3dade" }
+      "settings": { "foreground": "#A5A5A5" }
     },
 
     {
@@ -445,13 +450,14 @@
       "settings": { "foreground": "#c8a368" }
     },
     {
-      "name": "JS/TS Keywords",
+      "name": "Keyword-expression operators",
       "scope": [
         "keyword.operator.expression.instanceof",
         "keyword.operator.new",
         "keyword.operator.ternary",
         "keyword.operator.optional",
-        "keyword.operator.expression.keyof"
+        "keyword.operator.expression.keyof",
+        "keyword.operator.misc.as.rust"
       ],
       "settings": { "foreground": "#c8a368" }
     },
@@ -468,12 +474,12 @@
         "keyword.operator.comparison",
         "keyword.operator.logical"
       ],
-      "settings": { "foreground": "#d3dade" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "Assignment operators",
       "scope": ["keyword.operator.assignment"],
-      "settings": { "foreground": "#d3dade" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "Compound assignment operators",
@@ -500,7 +506,7 @@
     {
       "name": "Strings",
       "scope": ["string"],
-      "settings": { "foreground": "#D1D1D1" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "String interpolation",
@@ -540,10 +546,10 @@
     {
       "name": "Variable properties and object members",
       "scope": [
-        "variable.other.readwrite",
         "meta.object-literal.key",
         "support.variable.property",
-        "variable.other.property"
+        "variable.other.property",
+        "meta.attribute.python"
       ],
       "settings": { "foreground": "#d36464" }
     },
@@ -594,7 +600,7 @@
     {
       "name": "Attributes",
       "scope": ["entity.other.attribute-name"],
-      "settings": { "foreground": "#d3dade" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "Attribute IDs",
@@ -615,7 +621,7 @@
       "scope": ["markup.bold"],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#d3dade"
+        "foreground": "#d4d4d4"
       }
     },
     {
@@ -637,18 +643,18 @@
       "scope": [
         "source.json meta.structure.dictionary.json > value.json > string.quoted.json"
       ],
-      "settings": { "foreground": "#d3dade" }
+      "settings": { "foreground": "#d4d4d4" }
     },
 
     {
       "name": "Python self parameter",
       "scope": ["variable.parameter.function.language.special.self.python"],
-      "settings": { "foreground": "#458b96" }
+      "settings": { "foreground": "#d36464" }
     },
     {
       "name": "Python function parameters",
       "scope": ["variable.parameter.function.language.python"],
-      "settings": { "foreground": "#d3dade" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "Python logical operators",
@@ -674,7 +680,7 @@
     {
       "name": "JS/TS function parameter",
       "scope": ["variable.parameter.function.js"],
-      "settings": { "foreground": "#d36464" }
+      "settings": { "foreground": "#d4d4d4" }
     },
 
     {
@@ -689,7 +695,7 @@
     },
     {
       "name": "Rust language variables",
-      "scope": ["variable.language.rust"],
+      "scope": ["variable.language.self.rust"],
       "settings": { "foreground": "#d36464" }
     },
 
