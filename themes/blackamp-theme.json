@@ -36,12 +36,12 @@
     "editorLineNumber.activeForeground": "#EBEBEB",
     "editorLineNumber.foreground": "#8C8C8C",
 
-    "editorInlayHint.background": "#2c2e3050",
-    "editorInlayHint.foreground": "#ACACAC",
-    "editorInlayHint.parameterBackground": "#434A5640",
-    "editorInlayHint.parameterForeground": "#B0B0B0",
-    "editorInlayHint.typeBackground": "#525457ab",
-    "editorInlayHint.typeForeground": "#C0C0C0",
+    "editorInlayHint.background": "#00000000",
+    "editorInlayHint.foreground": "#2f5458",
+    "editorInlayHint.parameterBackground": "#00000000",
+    "editorInlayHint.parameterForeground": "#2f5458",
+    "editorInlayHint.typeBackground": "#00000000",
+    "editorInlayHint.typeForeground": "#2f5458",
 
     "editorRuler.foreground": "#525457ab",
     "editorLightBulb.foreground": "#c8a368",
@@ -339,10 +339,18 @@
     "function.constructor": "#c8a368",
     "method.constructor": "#c8a368",
     "property": "#d36464",
+    "parameter": "#d36464",
     "selfKeyword": "#d36464",
     "selfParameter": "#d36464",
-    "function.call": "#A5A5A5",
-    "method.call": "#A5A5A5"
+    "function": "#d4d4d4",
+    "function.call": "#d4d4d4",
+    "method": "#d4d4d4",
+    "method.call": "#d4d4d4",
+    "string": "#A5A5A5",
+    "number": "#458b96",
+    "decorator": "#d36464",
+    "function.defaultLibrary": "#d4d4d4",
+    "method.defaultLibrary": "#d4d4d4"
   },
   "tokenColors": [
     {
@@ -350,14 +358,14 @@
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#5d5b52"
+        "foreground": "#4a4a4a"
       }
     },
     {
       "name": "Comment Markup Link",
       "scope": "comment markup.link",
       "settings": {
-        "foreground": "#5d5b52"
+        "foreground": "#4a4a4a"
       }
     },
     {
@@ -374,7 +382,7 @@
         "constant.language",
         "constant.character.escape"
       ],
-      "settings": { "foreground": "#d4d4d4" }
+      "settings": { "foreground": "#458b96" }
     },
     {
       "name": "Constant other",
@@ -403,12 +411,12 @@
         "meta.function-call.generic.python",
         "support.function.builtin.python"
       ],
-      "settings": { "foreground": "#A5A5A5" }
+      "settings": { "foreground": "#d4d4d4" }
     },
     {
       "name": "Support functions",
       "scope": ["support.function"],
-      "settings": { "foreground": "#A5A5A5" }
+      "settings": { "foreground": "#d4d4d4" }
     },
 
     {
@@ -506,7 +514,7 @@
     {
       "name": "Strings",
       "scope": ["string"],
-      "settings": { "foreground": "#d4d4d4" }
+      "settings": { "foreground": "#A5A5A5" }
     },
     {
       "name": "String interpolation",
@@ -654,12 +662,30 @@
     {
       "name": "Python function parameters",
       "scope": ["variable.parameter.function.language.python"],
-      "settings": { "foreground": "#d4d4d4" }
+      "settings": { "foreground": "#d36464" }
     },
     {
       "name": "Python logical operators",
       "scope": ["keyword.operator.logical.python"],
       "settings": { "foreground": "#c8a368" }
+    },
+    {
+      "name": "Python decorators",
+      "scope": [
+        "entity.name.function.decorator.python",
+        "punctuation.definition.decorator.python"
+      ],
+      "settings": { "foreground": "#d36464" }
+    },
+    {
+      "name": "Python built-in types",
+      "scope": ["support.type.python"],
+      "settings": { "foreground": "#458b96" }
+    },
+    {
+      "name": "Python magic methods",
+      "scope": ["support.function.magic.python"],
+      "settings": { "foreground": "#A5A5A5" }
     },
     {
       "name": "Python docstrings",
