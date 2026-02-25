@@ -5,7 +5,7 @@
   "license": "MIT",
   "displayName": "Blackamp Theme",
   "description": "Dark theme inspired by vintage guitar amplifiers",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "icon": "assets/blackamp-icon.png",
   "galleryBanner": {
     "color": "#161D26",

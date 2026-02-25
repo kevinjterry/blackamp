@@ -621,7 +621,12 @@
 
     {
       "name": "Markup headings",
-      "scope": ["markup.heading"],
+      "scope": ["markup.heading", "entity.name.section.markdown"],
+      "settings": { "fontStyle": "bold", "foreground": "#d36464" }
+    },
+    {
+      "name": "Markup heading punctuation",
+      "scope": ["punctuation.definition.heading.markdown"],
       "settings": { "foreground": "#d36464" }
     },
     {
@@ -639,6 +644,74 @@
         "fontStyle": "italic",
         "foreground": "#c8a368"
       }
+    },
+    {
+      "name": "Markup strikethrough",
+      "scope": ["markup.strikethrough"],
+      "settings": { "fontStyle": "strikethrough", "foreground": "#9ba1a3" }
+    },
+    {
+      "name": "Markup link text",
+      "scope": [
+        "string.other.link.title.markdown",
+        "string.other.link.description.markdown"
+      ],
+      "settings": { "foreground": "#458b96" }
+    },
+    {
+      "name": "Markup link URL",
+      "scope": [
+        "markup.underline.link",
+        "markup.underline.link.markdown",
+        "markup.underline.link.image.markdown"
+      ],
+      "settings": { "foreground": "#4a4a4a" }
+    },
+    {
+      "name": "Markup inline code",
+      "scope": ["markup.inline.raw.string.markdown"],
+      "settings": { "foreground": "#A5A5A5" }
+    },
+    {
+      "name": "Markup fenced code block",
+      "scope": [
+        "markup.fenced_code.block.markdown",
+        "markup.raw.block.markdown"
+      ],
+      "settings": { "foreground": "#A5A5A5" }
+    },
+    {
+      "name": "Markup fenced code language",
+      "scope": ["fenced_code.block.language.markdown"],
+      "settings": { "foreground": "#9ba1a3" }
+    },
+    {
+      "name": "Markup blockquote",
+      "scope": ["markup.quote.markdown"],
+      "settings": { "fontStyle": "italic", "foreground": "#9ba1a3" }
+    },
+    {
+      "name": "Markup blockquote punctuation",
+      "scope": ["punctuation.definition.quote.begin.markdown"],
+      "settings": { "foreground": "#515050" }
+    },
+    {
+      "name": "Markup list bullet/number",
+      "scope": [
+        "punctuation.definition.list.begin.markdown",
+        "markup.list.numbered.markdown punctuation.definition.list.begin.markdown"
+      ],
+      "settings": { "foreground": "#d36464" }
+    },
+    {
+      "name": "Markup separator (horizontal rule)",
+      "scope": ["meta.separator.markdown"],
+      "settings": { "foreground": "#515050" }
+    },
+    {
+      "name": "Markup image punctuation",
+      "scope": ["punctuation.definition.image.markdown"],
+      "settings": { "foreground": "#c8a368" }
     },
 
     {
